@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b32">
+  <title>Madawaska KC | River Conditions</title>
+  <style>
+    :root {
+      --bg: #0b1c21;
+      --panel: #142c32;
+      --panel2: #1b383e;
+      --text: #edf5f1;
+      --muted: #a8bfba;
+      --accent: #73d5ad;
+      --border: #315158;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 28px 20px 22px;
+      background: linear-gradient(135deg, #173d43, #10252d);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 7px 0 2px;
+      font-size: 30px;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      width: min(100%, 760px);
+      margin: auto;
+      padding: 20px 15px 45px;
+    }
+
+    .notice {
+      background: #203b3d;
+      border: 1px solid #42665c;
+      border-radius: 12px;
+      padding: 13px 15px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: #c9e9d9;
+    }
+
+    .section-title {
+      margin: 25px 2px 12px;
+      font-size: 18px;
+    }
+
+    .river {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 17px;
+      margin-bottom: 13px;
+    }
+
+    .river-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .river h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .station {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .status {
+      background: #35454a;
+      color: #e1e8e5;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .reading {
+      margin: 22px 0 4px;
+      font-size: 34px;
+      font-weight: 750;
+      letter-spacing: -1px;
+    }
+
+    .reading small {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .details {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .placeholder {
+      border-top: 1px solid var(--border);
+      margin-top: 15px;
+      padding-top: 12px;
+      color: #b7ccc6;
+      font-size: 13px;
+    }
+
+    .feature {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 17px;
+      margin-bottom: 13px;
+    }
+
+    .feature h3 {
+      margin: 0 0 7px;
+      font-size: 16px;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: var(--panel2);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">Madawaska Kayak Club</div>
+    <h1>Madawaska KC</h1>
+    <p>Regional River Conditions</p>
+  </header>
+
+  <main>
+    <div class="notice">
+      <strong>Development preview</strong><br>
+      Live gauge readings and forecasts are not connected yet.
+      No estimated or simulated readings are displayed.
+    </div>
+
+    <h2 class="section-title">River conditions</h2>
+
+    <section class="river">
+      <div class="river-top">
+        <div>
+          <h3>Iroquois River</h3>
+          <div class="station">Water Survey of Canada · 01AF009</div>
+        </div>
+        <span class="status">Awaiting data</span>
+      </div>
+      <div class="reading">— <small>metres</small></div>
+      <div class="details">Current water level</div>
+      <div class="placeholder">
+        Status: Not connected<br>
+        Last observation: Not available
+      </div>
+    </section>
+
+    <section class="river">
+      <div class="river-top">
+        <div>
+          <h3>St-Francis River</h3>
+          <div class="station">Outlet of Glasier Lake · 01AD003</div>
+        </div>
+        <span class="status">Awaiting data</span>
+      </div>
+      <div class="reading">— <small>metres</small></div>
+      <div class="details">Current water level</div>
+      <div class="placeholder">
+        Status: Not connected<br>
+        Last observation: Not available
+      </div>
+    </section>
+
+    <section class="river">
+      <div class="river-top">
+        <div>
+          <h3>Rivière à la Truite</h3>
+          <div class="station">Derived estimate · Based on Iroquois River</div>
+        </div>
+        <span class="status">Awaiting data</span>
+      </div>
+      <div class="reading">— <small>metres</small></div>
+      <div class="details">Estimated water level</div>
+      <div class="placeholder">
+        Initial relationship: Iroquois × 0.3333<br>
+        Calibration: Not yet verified
+      </div>
+    </section>
+
+    <h2 class="section-title">Forecasts and analysis</h2>
+
+    <section class="feature">
+      <h3>7-day river forecast</h3>
+      <p>Estimated water-level trends based on current readings, precipitation forecasts and historical river behaviour.</p>
+      <span class="tag">Coming soon</span>
+    </section>
+
+    <section class="feature">
+      <h3>Precipitation forecast</h3>
+      <p>Forecast rainfall and snowfall for the river watersheds.</p>
+      <span class="tag">Coming soon</span>
+    </section>
+
+    <section class="feature">
+      <h3>Historical river behaviour</h3>
+      <p>Explore how quickly each river rises and recedes following precipitation events.</p>
+      <span class="tag">Coming soon</span>
+    </section>
+
+    <section class="feature">
+      <h3>River settings</h3>
+      <p>Configure suitability thresholds independently for each river and kayaking discipline. Adjust the Rivière à la Truite calculation relationship without changing code.</p>
+      <span class="tag">Coming soon</span>
+    </section>
+  </main>
+
+  <footer>
+    Madawaska KC · Regional River Conditions<br>
+    Always verify conditions on the river before paddling.
+  </footer>
+</body>
+</html>
